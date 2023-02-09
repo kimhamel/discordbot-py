@@ -30,7 +30,6 @@ async def 버튼(ctx):
             )
         ])
     ]
-)
     
 @buttons.click
 async def button_one(ctx):
