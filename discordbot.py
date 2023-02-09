@@ -1,7 +1,6 @@
 from cmath import log
 from distutils.sysconfig import PREFIX
 import discord
-from discord_buttons_plugin import *
 from dotenv import load_dotenv
 import os
 load_dotenv()
