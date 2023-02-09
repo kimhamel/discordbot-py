@@ -18,7 +18,8 @@ async def on_ready():
     print(f'Logged in as {client.user}.')
 
 @client.event
-DiscordComponents(bot, change_discord_methods=True)
+async def on_ready():
+    DiscordComponents(bot, change_discord_methods=True)
 
 @client.command()
 await ctx.send(type=InteractionType.ChannelMessageWithSource, content="버튼", components=[Button(style=ButtonStyle.URL, label="Example Invite Button", url="https://google.com"), Button(style=ButtonStyle.blue, label="호두이쁘니", custom_id="button")])
