@@ -3,7 +3,6 @@ from distutils.sysconfig import PREFIX
 import discord
 from discord.ext import commands
 import os
-load_dotenv()
 
 PREFIX = os.environ['PREFIX']
 TOKEN = os.environ['TOKEN']
