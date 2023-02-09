@@ -1,11 +1,7 @@
 from cmath import log
 from distutils.sysconfig import PREFIX
 import discord
-from discord import app_commands, Interaction, Object
 from discord.ext import commands
-from discord.ui import Button, View
-from discord import ButtonStyle
-from dotenv import load_dotenv
 import os
 load_dotenv()
 
