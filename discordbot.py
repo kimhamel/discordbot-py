@@ -22,7 +22,8 @@ async def on_ready():
     DiscordComponents(bot, change_discord_methods=True)
 
 @client.command()
-await ctx.send(type=InteractionType.ChannelMessageWithSource, content="버튼", components=[Button(style=ButtonStyle.blue, label="호두이쁘니", custom_id="button")])
+async def button(ctx):
+    await ctx.send(type=InteractionType.ChannelMessageWithSource, content="Message Here", components=[Button(style=ButtonStyle.blue, label="Default Button", custom_id="button")])
 
 @client.event
 async def on_button_click(interaction):
