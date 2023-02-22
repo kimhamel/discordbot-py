@@ -15,12 +15,18 @@ async def on_ready():
     
 @client.event
 async def on_message(message):
-    await message.add_reaction("🇭")
-    await message.add_reaction("🇺")
-    await message.add_reaction("🇹")
-    await message.add_reaction("🇦")
-    await message.add_reaction("🇴")
-    await message.add_reaction("🦋")
+    await message.add_reaction("❤️")
+    await message.add_reaction("🧡")
+    await message.add_reaction("💛")
+    await message.add_reaction("💚")
+    await message.add_reaction("🇼")
+    await message.add_reaction("🇮")
+    await message.add_reaction("🇫")
+    await message.add_reaction("🇪")
+    await message.add_reaction("💙")
+    await message.add_reaction("💜")
+    await message.add_reaction("🖤")
+    await message.add_reaction("🤍")
 
 try:
     client.run(TOKEN)
