@@ -4,7 +4,7 @@ import discord
 from discord.ext import commands
 import os
 
-PREFIX = os.environ['PREFIX']
+PREFIX = os.environ['!']
 TOKEN = os.environ['TOKEN']
 
 client = discord.Client()
@@ -36,6 +36,7 @@ async def classic(ctx):
         await bot.voice_clients[0].disconnect()
     ch = client.get_channel(1071032500064882788)
         await ch.send ("123")
+        
 try:
     client.run(TOKEN)
 except discord.errors.LoginFailure as e:
