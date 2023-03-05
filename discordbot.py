@@ -21,15 +21,6 @@ if
         await message.add_reaction("🇮")
         await message.add_reaction("🇫")
         await message.add_reaction("🇪")
-
-@client.command
-async def classic(ctx):
-    if ctx.author.voice and ctx.author.voice.channel:
-    	channel = ctx.author.voice.channel
-    	await channel.connect()
-        await client.voice_clients[0].disconnect()
-    ch = client.get_channel(1071032500064882788)
-        await ch.send ("123")
         
 try:
     client.run(TOKEN)
