@@ -4,7 +4,7 @@ import discord
 from discord.ext import commands
 import os
 
-PREFIX = os.environ['!']
+PREFIX = os.environ['PREFIX']
 TOKEN = os.environ['TOKEN']
 
 client = discord.Client()
@@ -14,26 +14,20 @@ async def on_ready():
     print(f'Logged in as {client.user}.')
     
 @client.event
-async def on_message(message):
-    await message.add_reaction("❤️")
-    await message.add_reaction("🧡")
-    await message.add_reaction("💛")
-    await message.add_reaction("💚")
-    await message.add_reaction("🇼")
-    await message.add_reaction("🇮")
-    await message.add_reaction("🇫")
-    await message.add_reaction("🇪")
-    await message.add_reaction("💙")
-    await message.add_reaction("💜")
-    await message.add_reaction("🖤")
-    await message.add_reaction("🤍")
+ch = client.get_channel()
+if
+    async def on_message(message):
+        await message.add_reaction("🇼")
+        await message.add_reaction("🇮")
+        await message.add_reaction("🇫")
+        await message.add_reaction("🇪")
 
 @client.command
 async def classic(ctx):
     if ctx.author.voice and ctx.author.voice.channel:
     	channel = ctx.author.voice.channel
     	await channel.connect()
-        await bot.voice_clients[0].disconnect()
+        await client.voice_clients[0].disconnect()
     ch = client.get_channel(1071032500064882788)
         await ch.send ("123")
         
